@@ -7,6 +7,9 @@ import os
 import csv
 import time
 
+# Required for GPU server (e.g., DGX-1) to select GPU to be used.
+os.environ["CUDA_VISIBLE_DEVICES"]="6"
+
 from enum import Enum
 class ZEROIMPORTANCE(Enum):
   DISABLED = 1
