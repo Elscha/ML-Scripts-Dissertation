@@ -5,7 +5,7 @@ The data analysis scripts of my dissertation
 ## Files
 
 * `ML-Analysis.py`: Main analysis script. This script can be used to start the various analyses.
-* `NeuralNetwork.py`: Additional script that implements the Neural Network. Will be executed as part of `ML-Analysis.py`, if the nural network analysis was selected.
+* `NeuralNetwork.py`: Additional script that implements the Neural Network. Will be executed as part of `ML-Analysis.py`, if the neural network analysis was selected.
 * `testGPU.py`: May be used to check whether GPUs are configured correctly and can be used by Tensorflow.
 * `RFE_reduced_subsets_final.csv`: The list of metrics retained by each RFE-cluster.
 * `ZERO_IMPORTANCE_ALL.csv`: The list of unimportant metrics of the **ALL** cluster.
@@ -24,7 +24,7 @@ Please note that all `CSV` files are encoded in German, i.e., `;` was used as se
   * `NN`: Neural Network using [Keras by Tensorflow](https://keras.io/api/models/model/)
   * `RF`: [Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 * `filter_zero_importance` (Line 25):
-  * `True`: Uses `ZERO_IMPORTANCE_\*.csv` to exclude irrelevant metrics from analysis to speed up analysis and to improve accuracy. Only relevant for ALL and GPV analyses as they make use of huge metric clusters. Also not considered during RFE-based analysis.
+  * `True`: Uses `ZERO_IMPORTANCE_*.csv` to exclude irrelevant metrics from analysis to speed up analysis and to improve accuracy. Only relevant for ALL and GPV analyses as they make use of huge metric clusters. Also not considered during RFE-based analysis.
   * `False`: Don't use this optimization
 * `dataset_file` (Line 26): Specifies which data set shall be analyzed.
 * `verbosity` (Line 27): Specifies how much log data shall be printed (0-3).
